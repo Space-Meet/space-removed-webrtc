@@ -67,8 +67,8 @@
 - (void)setConfigOverride:(NSString *_Nonnull)config withArray:( NSArray * _Nonnull)array;
 
 - (void)setAudioOnly:(BOOL)audioOnly;
-- (void)p2pEnabled:(BOOL)p2pEnabled;
 - (void)setAudioMuted:(BOOL)audioMuted;
+- (void)p2pEnabled:(BOOL)videoMuted;
 - (void)setVideoMuted:(BOOL)videoMuted;
 - (void)setCallHandle:(NSString *_Nonnull)callHandle;
 - (void)setCallUUID:(NSUUID *_Nonnull)callUUID;
