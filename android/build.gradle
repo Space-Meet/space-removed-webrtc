@@ -26,7 +26,8 @@ rootProject.allprojects {
         // maven { url "https://raw.githubusercontent.com/Mohamed-Gibreel/jitsi-release-android-mvn/master" }
         // maven { url "https://raw.githubusercontent.com/Mohamed-Gibreel/jitsi-meet-mvn-3.10.2/master" }
         // maven { url "https://raw.githubusercontent.com/Mohamed-Gibreel/jitsi-mvn-phone/master" }
-        maven { url "https://raw.githubusercontent.com/Space-Meet/space-videocalling-mvn-4.0.0/master" }
+        // maven { url "https://raw.githubusercontent.com/Space-Meet/space-videocalling-mvn-4.0.0/master" }
+        maven { url "https://raw.githubusercontent.com/Space-Meet/mvn-4.0.0-with-number/master" }
         google()
         jcenter()
     }
