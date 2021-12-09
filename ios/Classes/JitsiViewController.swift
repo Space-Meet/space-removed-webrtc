@@ -52,9 +52,6 @@ class JitsiViewController: UIViewController {
                                      with coordinator: UIViewControllerTransitionCoordinator) {
 
         let rect = CGRect(origin: CGPoint.zero, size: size)
-        print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
-        print(pipViewCoordinator);
-        print("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
         pipViewCoordinator?.resetBounds(bounds: rect)
         super.viewWillTransition(to: size, with: coordinator)
     }
@@ -70,7 +67,7 @@ class JitsiViewController: UIViewController {
         jitsiMeetView.delegate = self
         self.jitsiMeetView = jitsiMeetView
         let options = JitsiMeetConferenceOptions.fromBuilder { (builder) in
-            builder.welcomePageEnabled = true
+            // builder.welcomePageEnabled = true
             builder.room = self.roomName
             builder.serverURL = self.serverUrl
             // builder.subject = self.subject

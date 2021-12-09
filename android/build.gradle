@@ -25,7 +25,8 @@ rootProject.allprojects {
         // maven { url "https://raw.githubusercontent.com/Mohamed-Gibreel/jitsi-release-mvn/master" }
         // maven { url "https://raw.githubusercontent.com/Mohamed-Gibreel/jitsi-release-android-mvn/master" }
         // maven { url "https://raw.githubusercontent.com/Mohamed-Gibreel/jitsi-meet-mvn-3.10.2/master" }
-        maven { url "https://raw.githubusercontent.com/Mohamed-Gibreel/jitsi-mvn-phone/master" }
+        // maven { url "https://raw.githubusercontent.com/Mohamed-Gibreel/jitsi-mvn-phone/master" }
+        maven { url "https://raw.githubusercontent.com/Space-Meet/space-videocalling-mvn-4.0.0/master" }
         google()
         jcenter()
     }
@@ -55,7 +56,7 @@ android {
 }
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    // implementation ('org.jitsi.react:jitsi-meet-sdk:3.10.2') { transitive = true }
-    implementation ('org.jitsi.react:jitsi-meet-sdk:3.8.0') { transitive = true }
+    // implementation ('org.jitsi.react:jitsi-meet-sdk:3.8.0') { transitive = true }
+    implementation ('org.jitsi.react:jitsi-meet-sdk:4.0.0') { transitive = true }
     
 }
