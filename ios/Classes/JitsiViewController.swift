@@ -72,9 +72,11 @@ class JitsiViewController: UIViewController {
             builder.serverURL = self.serverUrl
             // builder.subject = self.subject
             builder.userInfo = self.jistiMeetUserInfo
-            // builder.audioOnly = self.audioOnly ?? false
-            // builder.audioMuted = self.audioMuted ?? false
-            // builder.videoMuted = self.videoMuted ?? false
+            builder.setSubject(self.subject)
+            builder.setAudioMuted(self.audioMuted ?? false)
+            builder.setVideoMuted(self.videoMuted ?? false)
+            builder.setAudioOnly(false)
+            builder.p2pEnabled(false)
             builder.token = self.token
             
             self.featureFlags?.forEach{ key,value in
