@@ -132,6 +132,7 @@ public class JitsiMeetPlugin() : FlutterPlugin, MethodCallHandler, ActivityAware
                 .setRoom(room)
                 .setSubject(call.argument("subject"))
                 .setToken(call.argument("token"))
+                .p2pEnabled(false)
                 .setAudioMuted(call.argument("audioMuted") ?: false)
                 .setAudioOnly(call.argument("audioOnly") ?: false)
                 .setVideoMuted(call.argument("videoMuted") ?: false)
