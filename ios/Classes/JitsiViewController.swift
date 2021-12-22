@@ -72,7 +72,7 @@ class JitsiViewController: UIViewController {
             builder.serverURL = self.serverUrl
             // builder.subject = self.subject
             builder.userInfo = self.jistiMeetUserInfo
-            builder.setSubject(self.subject)
+            builder.setSubject(self.subject ?? "Space Meeting")
             builder.setAudioMuted(self.audioMuted ?? false)
             builder.setVideoMuted(self.videoMuted ?? false)
             builder.setAudioOnly(false)
