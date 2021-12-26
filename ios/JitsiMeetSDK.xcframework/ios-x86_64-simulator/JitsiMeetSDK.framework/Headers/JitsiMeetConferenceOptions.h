@@ -35,11 +35,23 @@
 @property (nonatomic, copy, nullable) NSString *token;
 
 /**
+ * Color scheme override, see:
+ * https://github.com/jitsi/jitsi-meet/blob/master/react/features/base/color-scheme/defaultScheme.js
+ */
+@property (nonatomic, copy, nullable) NSDictionary *colorScheme;
+
+/**
  * Feature flags. See: https://github.com/jitsi/jitsi-meet/blob/master/react/features/base/flags/constants.js
  */
 @property (nonatomic, readonly, nonnull) NSDictionary *featureFlags;
 
 @property (nonatomic, readonly, nonnull) NSDictionary *config;
+
+/**
+ * Set to YES to enable the welcome page. Typically SDK users won't need this enabled
+ * since the host application decides which meeting to join.
+ */
+@property (nonatomic) BOOL welcomePageEnabled;
 
 /**
  * Information about the local user. It will be used in absence of a token.
@@ -56,7 +68,7 @@
 
 - (void)setAudioOnly:(BOOL)audioOnly;
 - (void)setAudioMuted:(BOOL)audioMuted;
-- (void)p2pEnabled:(BOOL)p2pEnabled;
+- (void)p2pEnabled:(BOOL)videoMuted;
 - (void)setVideoMuted:(BOOL)videoMuted;
 - (void)setCallHandle:(NSString *_Nonnull)callHandle;
 - (void)setCallUUID:(NSUUID *_Nonnull)callUUID;
@@ -71,7 +83,10 @@
 @property (nonatomic, copy, nullable, readonly) NSString *room;
 @property (nonatomic, copy, nullable, readonly) NSString *token;
 
+@property (nonatomic, copy, nullable) NSDictionary *colorScheme;
 @property (nonatomic, readonly, nonnull) NSDictionary *featureFlags;
+
+@property (nonatomic, readonly) BOOL welcomePageEnabled;
 
 @property (nonatomic, nullable) JitsiMeetUserInfo *userInfo;
 

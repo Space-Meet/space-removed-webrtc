@@ -50,11 +50,9 @@
         "messagebox": "Type a message",
         "nickname": {
             "popover": "Choose a nickname",
-            "title": "Enter a nickname to use chat",
-            "titleWithPolls": "Enter a nickname to use chat"
+            "title": "Enter a nickname to use chat"
         },
         "title": "Chat",
-        "titleWithPolls": "Chat",
         "you": "",
         "privateNotice": "",
         "noMessagesMessage": "",
@@ -480,8 +478,8 @@
     },
     "profile": {
         "setDisplayNameLabel": "Set your display name",
-        "setEmailInput": "Enter email",
-        "setEmailLabel": "Set your Gravatar email",
+        "setEmailInput": "Enter e-mail",
+        "setEmailLabel": "Set your Gravatar e-mail",
         "title": "Profile"
     },
     "recording": {
@@ -559,7 +557,7 @@
         "advanced": "Advanced"
     },
     "share": {
-        "dialInfoText": "\n\n=====\n\nJust want to dial in on your phone?\n\n{{defaultDialInNumber}}Click this link to see the dial in phone numbers for this meeting\n{{dialInfoPageUrl}}",
+        "dialInfoText": "\n\n=====\n\nJust want to dial in on your phone?\n\n{{defaultDialInNumber}}",
         "mainText": "Click the following link to join the meeting:\n{{roomUrl}}"
     },
     "speaker": "Speaker",
